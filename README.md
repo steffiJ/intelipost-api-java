@@ -9,3 +9,8 @@ Installation
 Download the zip. 
 Unzip the project. 
 Opon your IDE and import the project as 'Existing Maven Project'.
+
+Documentation
+===================
+
+Up-to-date documentation at: http://docs.intelipost.com.br .
