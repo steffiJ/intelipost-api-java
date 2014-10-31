@@ -33,7 +33,7 @@ public class RequestMTest {
 	private static final Logger LOG = Logger.getLogger("RequestTestLogger");
 
 	// please use a valid api key to get the test running
-	private static final String apikey = "your api key";
+	private static final String apikey = "casperJsTestApiKey";
 
     @Test
     public void doQuoteRequest () {
@@ -143,7 +143,7 @@ public class RequestMTest {
     	assertNotNull(address);
 
     	// for given cep 04037-002 the returned state should be São Paulo
-    	Assert.assertEquals("São Paulo", address.getState());
+    	Assert.assertEquals("SP", address.getStateShort());
 
     	// for given cep 04037-002 the returned ibge should be 3550308
     	Assert.assertEquals("3550308", address.getIbge());
