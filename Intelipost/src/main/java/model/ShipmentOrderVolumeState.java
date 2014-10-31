@@ -1,0 +1,28 @@
+package model;
+
+public enum ShipmentOrderVolumeState {
+
+	NEW(1, "NEW"),
+    CLARIFY_ADDRESS(2, "CLARIFY_ADDRESS"),
+    ADDRESS_VALIDATED(3, "ADDRESS_VALIDATED"),
+    CREATED_AT_LOGISTIC_PROVIDER(4, "CREATED_AT_LOGISTIC_PROVIDER"),
+    CLARIFY_LABEL_FAIL(5, "CLARIFY_LABEL_FAIL"),
+    LABEL_CREATED(6, "LABEL_CREATED"),
+    CANCELLED(7, "CANCELLED"),
+    READY_FOR_SHIPPING(8, "READY_FOR_SHIPPING"),
+    SHIPPED(9, "SHIPPED"),
+    CLARIFY_DELIVERY_FAIL(10, "CLARIFY_DELIVERY_FAIL"),
+    CLARIFY_DELIVERY_LATE(11, "CLARIFY_DELIVERY_LATE"),
+    IN_TRANSIT(12, "IN_TRANSIT"),
+    DELIVERY_FAILED(13, "DELIVERY_FAILED"),
+    DELIVERED(14, "DELIVERED"),
+    CLOSED(15, "CLOSED");
+
+	private Integer id;
+	private String code;
+
+	private ShipmentOrderVolumeState(Integer id, String code) {
+		this.id = id;
+		this.code = code;
+	}
+}
