@@ -18,6 +18,11 @@ Up-to-date documentation at: http://docs.intelipost.com.br .
 Releases
 --------------------
 
+## 0.1.1
+*2014-10-31 | Stefanie Jahnke*
+
+- added platform and plugin header information
+
 ## 0.1.0
 *2014-10-31 | Stefanie Jahnke*
 
