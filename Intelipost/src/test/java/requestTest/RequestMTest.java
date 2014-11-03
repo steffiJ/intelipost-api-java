@@ -33,7 +33,7 @@ public class RequestMTest {
 	private static final Logger LOG = Logger.getLogger("RequestTestLogger");
 
 	// please use a valid api key to get the test running
-	private static final String apikey = "your api key";
+	private static final String apikey = "casperJsTestApiKey";
 
     @Test
     public void doQuoteRequest () {

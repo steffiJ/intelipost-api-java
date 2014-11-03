@@ -20,6 +20,8 @@ import org.codehaus.jackson.map.PropertyNamingStrategy;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import constants.Constants;
+
 public class Request {
 
 	private String url;
@@ -73,7 +75,9 @@ public class Request {
 
 	    //set api key for authentication
 	    postRequest.setHeader("api_key", apiKey);
-	    postRequest.setHeader("Content-type", "application/json");
+	    postRequest.setHeader("Content-type", Constants.CONTENT_TYPE);
+	    postRequest.setHeader("platform", Constants.PLATFORM);
+	    postRequest.setHeader("plugin", Constants.PLUGIN);
 	    postRequest.setEntity(new StringEntity(stringObject));
 
 	    HttpResponse response = httpClient.execute(postRequest);
@@ -89,7 +93,9 @@ public class Request {
 
 	    //set api key for authentication
 	    getRequest.setHeader("api_key", apiKey);
-	    getRequest.setHeader("Content-type", "application/json");
+	    getRequest.setHeader("Content-type", Constants.CONTENT_TYPE);
+	    getRequest.setHeader("platform", Constants.PLATFORM);
+	    getRequest.setHeader("plugin", Constants.PLUGIN);
 
 	    HttpResponse response = httpClient.execute(getRequest);
 
