@@ -10,6 +10,15 @@ Download the zip.
 Unzip the project. 
 Opon your IDE and import the project as 'Existing Maven Project'.
 
+ **Dependencies**
+ 
+ - httpcomponents 4.3.1
+ - jackson 1.9.13
+ - gson 2.3
+ - joda-time 2.5
+ - junit 4.12
+ - springframework 2.5.6
+
 Documentation
 --------------------
 
