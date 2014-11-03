@@ -17,7 +17,6 @@ Opon your IDE and import the project as 'Existing Maven Project'.
  - gson 2.3
  - joda-time 2.5
  - junit 4.12
- - springframework 2.5.6
 
 Documentation
 --------------------
